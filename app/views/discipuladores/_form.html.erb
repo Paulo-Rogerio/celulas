@@ -1,0 +1,49 @@
+<%= form_for(@discipulador) do |f| %>
+  <% if @discipulador.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@discipulador.errors.count, "error") %> prohibited this discipulador from being saved:</h2>
+
+      <ul>
+      <% @discipulador.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :cpf %><br>
+    <%= f.number_field :cpf %>
+  </div>
+  <div class="field">
+    <%= f.label :fone_residencial %><br>
+    <%= f.number_field :fone_residencial %>
+  </div>
+  <div class="field">
+    <%= f.label :fone_celular %><br>
+    <%= f.number_field :fone_celular %>
+  </div>
+  <div class="field">
+    <%= f.label :endereco %><br>
+    <%= f.text_field :endereco %>
+  </div>
+  <div class="field">
+    <%= f.label :bairro %><br>
+    <%= f.text_field :bairro %>
+  </div>
+  <div class="field">
+    <%= f.label :cidade %><br>
+    <%= f.text_field :cidade %>
+  </div>
+  <div class="field">
+    <%= f.label :estado %><br>
+    <%= f.text_field :estado %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

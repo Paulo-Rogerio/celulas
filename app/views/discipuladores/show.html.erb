@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @discipulador.nome %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @discipulador.cpf %>
+</p>
+
+<p>
+  <strong>Fone residencial:</strong>
+  <%= @discipulador.fone_residencial %>
+</p>
+
+<p>
+  <strong>Fone celular:</strong>
+  <%= @discipulador.fone_celular %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @discipulador.endereco %>
+</p>
+
+<p>
+  <strong>Bairro:</strong>
+  <%= @discipulador.bairro %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @discipulador.cidade %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @discipulador.estado %>
+</p>
+
+<%= link_to 'Edit', edit_discipulador_path(@discipulador) %> |
+<%= link_to 'Back', discipuladores_path %>
