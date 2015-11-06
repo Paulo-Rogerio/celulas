@@ -1,0 +1,21 @@
+ActiveSupport::Inflector.inflections do |inflect|
+  inflect.irregular 'lotacao', 'lotacoes'
+  inflect.plural 'lotacao', 'lotacoes'
+  inflect.irregular 'usuario', 'usuarios'
+  inflect.plural 'usuario', 'usuarios'
+  inflect.plural 'lider', 'lideres'
+  inflect.irregular 'lider', 'lideres'
+  inflect.plural 'pastor', 'pastores'
+  inflect.irregular 'pastor', 'pastores'
+  inflect.plural 'obreiro', 'obreiros'
+  inflect.irregular 'obreiro', 'obreiros'
+  inflect.plural 'discipulador', 'discipuladores'
+  inflect.irregular 'discipulador', 'discipuladores'
+  inflect.plural 'status','status'
+  inflect.irregular 'status','status'
+  inflect.plural 'solicitacao','solicitacoes'
+  inflect.irregular 'solicitacao','solicitacoes'
+  inflect.plural 'andamento','andamentos'
+  inflect.irregular 'andamento','andamentos'
+end
+

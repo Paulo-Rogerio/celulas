@@ -1,0 +1,57 @@
+<%= form_for(@lider) do |f| %>
+  <% if @lider.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lider.errors.count, "error") %> prohibited this lider from being saved:</h2>
+
+      <ul>
+      <% @lider.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :cpf %><br>
+    <%= f.number_field :cpf %>
+  </div>
+  <div class="field">
+    <%= f.label :discipulador %><br>
+    <%= f.text_field :discipulador %>
+  </div>
+  <div class="field">
+    <%= f.label :telefone %><br>
+    <%= f.number_field :telefone %>
+  </div>
+  <div class="field">
+    <%= f.label :residencial %><br>
+    <%= f.text_field :residencial %>
+  </div>
+  <div class="field">
+    <%= f.label :celular %><br>
+    <%= f.number_field :celular %>
+  </div>
+  <div class="field">
+    <%= f.label :Endereco %><br>
+    <%= f.text_field :Endereco %>
+  </div>
+  <div class="field">
+    <%= f.label :Bairro %><br>
+    <%= f.text_field :Bairro %>
+  </div>
+  <div class="field">
+    <%= f.label :Cidade %><br>
+    <%= f.text_field :Cidade %>
+  </div>
+  <div class="field">
+    <%= f.label :Estado %><br>
+    <%= f.text_field :Estado %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
