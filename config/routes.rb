@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
 
+  resources :discipuladores
   resources :lideres
-  # get 'login/index'
 
   # Controle login e a action index
   # Essa sera a pagina principal - Todos deveram autenticar

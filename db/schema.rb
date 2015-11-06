@@ -11,15 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151106025027) do
+ActiveRecord::Schema.define(version: 20151106033011) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "discipuladores", force: :cascade do |t|
+    t.string   "nome"
+    t.integer  "cpf"
+    t.integer  "fone_residencial"
+    t.integer  "fone_celular"
+    t.string   "endereco"
+    t.string   "bairro"
+    t.string   "cidade"
+    t.string   "estado"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
   create_table "lideres", force: :cascade do |t|
     t.string   "nome"
     t.integer  "cpf"
-    t.string   "discipulador"
     t.integer  "telefone"
     t.string   "residencial"
     t.integer  "celular"
@@ -27,8 +39,8 @@ ActiveRecord::Schema.define(version: 20151106025027) do
     t.string   "Bairro"
     t.string   "Cidade"
     t.string   "Estado"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end
